@@ -18,7 +18,7 @@ body{
     width: 100%;
     background: #fff;
     font-family: 'Poppins', sans-serif;
-    padding-top: 1000px;
+    /* padding-top: 1000px; */
 }
 i:hover{
     cursor: pointer;
@@ -29,6 +29,10 @@ i:hover{
     top: 0;
     left: 0;
     right: 0;
+
+    /* Sardor orqa fon berdi */
+    background-color: #fff;
+    z-index: 2;
 }
 .upper-menu{
     width: 100%;
@@ -145,6 +149,50 @@ i:hover{
 }
 
 
+/* Main - Sardor (21.12.2022 14:38) */
+    .bg-image {
+        height: 90vh;
+        background-image: url("./images/product-images/Promotion\ Image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main-text {
+        font-size: 2rem;
+        color: #fff;
+        padding: 50vh 0 0 5vw;
+    }
+    .new-products {
+        width: 90%;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 100px;
+        background-color: #fff;
+    }
+    .new-products__item{
+        width: 33.33%;
+        position: relative;
+    }
+    .new-products__item > img {
+        max-width: 100%;
+        height: 100%;
+    }
+    .product-description {
+        position: absolute;
+        text-transform: uppercase;
+        top: 30px;
+        left: 50px;
+        font-weight: 800;
+        font-size: 1.2em;
+        color: #223263;
+    }
+
+
+/* /Main */
+
 .footer{
     width: 100%;
     height: auto;
@@ -232,6 +280,11 @@ i:hover{
       }
 }
 
+/* Sardor's code */
+    .main-text {
+        font-size: 1.5rem; 
+    }
+
 @media screen and (max-width: 768px) {
     .main-menu .logo a{
         font-size: 14px;
@@ -289,3 +342,7 @@ i:hover{
         transition: 0.2s;
     }
 }
+/* Sardor's code */
+   .main-text {
+        font-size: 2.2rem; 
+    }

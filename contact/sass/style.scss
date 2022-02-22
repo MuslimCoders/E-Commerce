@@ -303,7 +303,7 @@ h3 {
 .directory {
     display: none;
     background-color: var(--light-gray);
-    
+
     .path-container {
         display: flex;
         justify-content: center;
@@ -319,9 +319,64 @@ h3 {
     }
 }
 
+.contact {
+    &-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    &-image {
+        display: none;
+        max-width: 100%;
+        width: 400px;
+    }
+    &-form {
+    }
+    /* Input */
+    label {
+        font-size: 0.95em;
+        margin: 0.6em 0 0.3em 0;
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        border: 2px solid #ccc;
+        padding: 0.8em 1em;
+        border-width: 0.5px;
+        color: rgba(0, 0, 0, 0.589);
+        font-family: "Poppins", sans-serif;
+    }
+    textarea {
+        resize: none;
+        height: 10em;
+    }
+}
+
+/* Mid Devices */
 @media (min-width: 768px) {
     /* Contact Section */
     .directory {
         display: block;
+    }
+}
+
+/* Large  Devices */
+@media (min-width: 996px) {
+    /* Contact Section */
+    .contact {
+        &-card {
+            display: flex;
+            max-width: 100%;
+            
+        }
+        &-image {
+            display: block;
+            
+        }
+        &-form {
+            width: 100%;
+        }
     }
 }

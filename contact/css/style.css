@@ -358,11 +358,58 @@ h3 {
   color: var(--havorang);
 }
 
+.contact {
+  /* Input */
+}
+.contact-card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.contact-image {
+  display: none;
+  max-width: 100%;
+  width: 400px;
+}
+.contact label {
+  font-size: 0.95em;
+  margin: 0.6em 0 0.3em 0;
+  display: block;
+}
+.contact input[type=text],
+.contact input[type=email],
+.contact textarea {
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 0.8em 1em;
+  border-width: 0.5px;
+  color: rgba(0, 0, 0, 0.589);
+  font-family: "Poppins", sans-serif;
+}
+.contact textarea {
+  resize: none;
+  height: 10em;
+}
+
+/* Mid Devices */
 @media (min-width: 768px) {
   /* Contact Section */
   .directory {
     display: block;
   }
 }
+/* Large  Devices */
+@media (min-width: 996px) {
+  /* Contact Section */
+  .contact-card {
+    display: flex;
+    max-width: 100%;
+  }
+  .contact-image {
+    display: block;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=style.css.map */

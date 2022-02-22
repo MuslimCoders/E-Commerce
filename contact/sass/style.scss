@@ -321,6 +321,7 @@ h3 {
 
 .contact {
     &-card {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
         max-width: 400px;
         margin: 0 auto;
     }
@@ -330,6 +331,8 @@ h3 {
         width: 400px;
     }
     &-form {
+        margin: 5em 1.5em;
+        padding: 2em 0;
     }
     /* Input */
     label {
@@ -354,6 +357,38 @@ h3 {
     }
 }
 
+/* Search */
+.search {
+    margin: 0 0 4em 0;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #bcddfe;
+
+        max-width: 400px;
+        margin: 0 auto;
+        // padding: 0.5em 0.5em;
+        border-radius: 6px;
+    }
+    &-input {
+        padding: 1em 0.5em;
+        width: 100%;
+        border: none;
+        color: rgba(0, 0, 0, 0.589);
+        font-family: "Poppins", sans-serif;
+    }
+    &-btn {
+        background-color: #40bfff;
+        padding: 0.8em 1.5em;
+        color: #fff;
+        margin: -1px;
+        
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
+
 /* Mid Devices */
 @media (min-width: 768px) {
     /* Contact Section */
@@ -364,19 +399,28 @@ h3 {
 
 /* Large  Devices */
 @media (min-width: 996px) {
+    .container {
+        width: 1000px;
+    }
     /* Contact Section */
     .contact {
+        margin: 5em 0;
         &-card {
             display: flex;
             max-width: 100%;
-            
         }
         &-image {
             display: block;
-            
         }
         &-form {
             width: 100%;
+            padding: 0;
+        }
+    }
+    /* Search */
+    .search {
+        &-container {
+            max-width: 500px;
         }
     }
 }

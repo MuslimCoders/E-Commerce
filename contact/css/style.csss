@@ -362,7 +362,6 @@ h3 {
   /* Input */
 }
 .contact-card {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   max-width: 400px;
   margin: 0 auto;
 }
@@ -370,10 +369,6 @@ h3 {
   display: none;
   max-width: 100%;
   width: 400px;
-}
-.contact-form {
-  margin: 5em 1.5em;
-  padding: 2em 0;
 }
 .contact label {
   font-size: 0.95em;
@@ -395,35 +390,6 @@ h3 {
   height: 10em;
 }
 
-/* Search */
-.search {
-  margin: 0 0 4em 0;
-}
-.search-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid #bcddfe;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 6px;
-}
-.search-input {
-  padding: 1em 0.5em;
-  width: 100%;
-  border: none;
-  color: rgba(0, 0, 0, 0.589);
-  font-family: "Poppins", sans-serif;
-}
-.search-btn {
-  background-color: #40bfff;
-  padding: 0.8em 1.5em;
-  color: #fff;
-  margin: -1px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-}
-
 /* Mid Devices */
 @media (min-width: 768px) {
   /* Contact Section */
@@ -433,14 +399,7 @@ h3 {
 }
 /* Large  Devices */
 @media (min-width: 996px) {
-  .container {
-    width: 1000px;
-  }
-
   /* Contact Section */
-  .contact {
-    margin: 5em 0;
-  }
   .contact-card {
     display: flex;
     max-width: 100%;
@@ -450,13 +409,7 @@ h3 {
   }
   .contact-form {
     width: 100%;
-    padding: 0;
-  }
-
-  /* Search */
-  .search-container {
-    max-width: 500px;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */

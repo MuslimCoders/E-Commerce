@@ -278,12 +278,10 @@ i:hover{
         display: flex;
         flex-direction: column;
       }
-}
 
-/* Sardor's code */
-    .main-text {
-        font-size: 1.5rem; 
-    }
+      /* Sardor */
+      
+}
 
 @media screen and (max-width: 768px) {
     .main-menu .logo a{
@@ -342,7 +340,3 @@ i:hover{
         transition: 0.2s;
     }
 }
-/* Sardor's code */
-   .main-text {
-        font-size: 2.2rem; 
-    }

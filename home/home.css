@@ -18,7 +18,10 @@ body{
     width: 100%;
     background: #fff;
     font-family: 'Poppins', sans-serif;
-    /* padding-top: 1000px; */
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 i:hover{
     cursor: pointer;
@@ -152,7 +155,7 @@ i:hover{
 /* Main - Sardor (21.12.2022 14:38) */
     .bg-image {
         height: 90vh;
-        background-image: url("./images/product-images/Promotion\ Image.png");
+        background-image: url("./images/product-images/main-image.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -160,15 +163,14 @@ i:hover{
     .main-text {
         font-size: 2rem;
         color: #fff;
-        padding: 50vh 0 0 5vw;
+        padding: 50vh 0 30vh 5vw;
     }
     .new-products {
         width: 90%;
         border-radius: 5px;
-        margin: 0 auto;
+        margin: -50px auto 0 auto ;
         display: flex;
         justify-content: center;
-        position: relative;
         bottom: 100px;
         background-color: #fff;
     }
@@ -188,6 +190,64 @@ i:hover{
         font-weight: 800;
         font-size: 1.2em;
         color: #223263;
+    }
+    /* Best sellers */
+    .best-seller {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .best-seller__nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 50px;
+    }
+    .best-seller__nav-item > a{
+        color: var(--qora);
+    }
+    .best-seller__nav-item > a:hover{
+        border-bottom: 3px solid var(--havorang);
+        color: var(--havorang);
+    }
+
+    .best-seller__products{
+        /* position: relative; */
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .best-seller__product {
+        width: 250px;
+        padding: 10px;
+        margin: 10px 0;
+        position: relative;
+        border: 1px solid #F6F6F6;
+    }
+
+    .best-seller__product img {
+        width: 230px;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease; 
+    }
+
+    div.rates img{
+        width: 20px;
+    }
+    .price {
+        color:#40BFFF;
+        font-size: 1rem;
+    }
+    .real-price {
+        font-size: 0.8rem;
+        color: gray;
+        font-weight: 200;
+        padding: 0 10px;
+    }
+    .discount {
+        color: #FB7181;
+        font-size: 0.9rem;
     }
 
 

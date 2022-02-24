@@ -256,7 +256,6 @@ i:hover{
 
 
 /* /Main */
-
 .footer{
     width: 100%;
     height: auto;
@@ -343,8 +342,20 @@ i:hover{
         flex-direction: column;
       }
 
-      /* Sardor */
-      
+    /* Sardor */
+    .bg-image {
+        height: 50vh;
+    }
+    .main-text > h2 {
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 150px;
+    }
+    .product-description {
+        font-size: 0.6em;
+        top: 10px;
+        left: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {

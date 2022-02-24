@@ -207,6 +207,7 @@ i:hover{
     }
     .best-seller__nav-item > a:hover{
         border-bottom: 3px solid var(--havorang);
+        transition: all 0.1s ease;
         color: var(--havorang);
     }
 
@@ -429,5 +430,37 @@ i:hover{
         font-size: 16px;
         color: var(--qora);
         transition: 0.2s;
+    }
+    /* Sardor's code */
+    .bg-image {
+        height: 50vh;
+    }
+    .main-text > h2 {
+        font-size: 1.5rem;
+        position: relative;
+        bottom: 150px;
+    }
+    .product-description {
+        font-size: 0.6em;
+        top: 7px;
+        left: 10px;
+    }
+    .best-seller__nav-items {
+        max-width: 90vw;
+        margin: 0 10px;
+        column-gap: 20px;
+    }
+    .best-seller__nav-item > a{
+        font-size: 0.9rem;
+    }
+    .best-seller__product {
+        width: 180px;
+        font-size: 0.6rem;
+    }
+    .best-seller__product img {
+        width: 160px;
+    }
+    div.rates img {
+        width: 15px;
     }
 }

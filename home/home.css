@@ -249,6 +249,10 @@ i:hover{
         color: #FB7181;
         font-size: 0.9rem;
     }
+    .load-more > a{
+        color: var(--havorang);
+        border-bottom: 3px solid var(--havorang);
+    }
 
 
 /* /Main */

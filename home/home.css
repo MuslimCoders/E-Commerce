@@ -306,6 +306,15 @@ i:hover{
 .mobile-bottom-nav{
     display: none;
 }
+
+/* Sardor vaqtincha yozdi */
+.image > img{
+    width: 100%;
+}
+
+
+
+
 @media screen and (max-width: 480px) {
     .upper-menu{
         display: none;

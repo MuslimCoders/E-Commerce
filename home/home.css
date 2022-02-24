@@ -211,7 +211,6 @@ i:hover{
     }
 
     .best-seller__products{
-        /* position: relative; */
         width: 90vw;
         margin: 0 auto;
         display: flex;
@@ -228,8 +227,6 @@ i:hover{
 
     .best-seller__product img {
         width: 230px;
-        transform-style: preserve-3d;
-        transition: all 0.5s ease; 
     }
 
     div.rates img{
@@ -353,9 +350,28 @@ i:hover{
     }
     .product-description {
         font-size: 0.6em;
-        top: 10px;
+        top: 7px;
         left: 10px;
     }
+    .best-seller__nav-items {
+        max-width: 90vw;
+        margin: 0 10px;
+        column-gap: 20px;
+    }
+    .best-seller__nav-item > a{
+        font-size: 0.9rem;
+    }
+    .best-seller__product {
+        width: 180px;
+        font-size: 0.6rem;
+    }
+    .best-seller__product img {
+        width: 160px;
+    }
+    div.rates img {
+        width: 15px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {

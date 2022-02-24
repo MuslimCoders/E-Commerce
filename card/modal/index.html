@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Old+Standard+TT:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Serif+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="pay-modal">
+            <div class="pay-modal_direct">
+                <div class="pay-modal_icons">
+
+                    <div class="arrow-icon">
+                        <img src="./icons/arrow_left.svg" alt="arrow_left" class="back-icon">
+                    </div>
+
+                    <div class="close-icon">
+                        <img src="./icons/closebtn.svg" alt="closebtn" class="close-icon">
+                    </div>
+
+                    <h3 class="pay-modal_title">Make payment</h3>
+
+                </div>
+            </div>
+            <div class="container-progressbar">
+                <ul class="progressbar">
+                    <li class="number" id="active"></li>
+                    <li class="number"></li>
+                    <li class=" number"></li>
+                </ul>
+            </div>
+
+            <div class="content-area">
+
+                <div class="content-area__left">
+                    <input type="text" placeholder="First Name" class="input-name">
+                    <input type="text" placeholder="Email Adress" class="input-adress">
+                    <h3 class="left-title">Select Method of Payment</h3>
+                    <div class="check-area">
+
+
+
+                       <div class="checks">
+                        <label class="check">
+
+                            <div class="check-card">
+                                <img src="./icons/Credit Card.svg" alt="" class="check-icon">
+                                <h3 class="check-title">Credir Card or Debit</h3>
+                            </div>
+                            <div class="checked-table">
+                                <input type="checkbox" checked="checked" class="check-mark">
+                                <span class="checkmark"></span>
+                            </div>
+                        </label>
+                       </div>
+                       <div class="checks">
+                        <label class="check">
+
+                            <div class="check-card">
+                                <img src="./icons/Paypal.svg" alt="" class="check-icon">
+                                <h3 class="check-title">Paypal</h3>
+                            </div>
+                            <div class="checked-table">
+                                <input type="checkbox" checked="checked" class="check-mark">
+                                <span class="checkmark"></span>
+                            </div>
+                        </label>
+                       </div>
+                       <div class="checks">
+                        <label class="check">
+
+                            <div class="check-card">
+                                <img src="./icons/Bank.svg" alt="" class="check-icon">
+                                <h3 class="check-title">Bank Transfer</h3>
+                            </div>
+                            <div class="checked-table">
+                                <input type="checkbox" checked="checked" class="check-mark">
+                                <span class="checkmark"></span>
+                            </div>
+                        </label>
+                       </div>
+
+                        
+
+                    </div>
+                </div>
+
+                <div class="content-area__right">
+
+                    <input type="text" placeholder="Last Name" class="input-lastname">
+                    <textarea placeholder="Adrees of Delivery"></textarea>
+                    <input type="text" placeholder="Mobile Phone" class="input-phone">
+
+                </div>
+
+            </div>
+            <div class="btn-submit">
+                <button class="btn">Go to Payment</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -298,6 +298,7 @@
 }
 
 .container .pay-modal .content-area__right textarea {
+  resize: none;
   display: block;
   width: 100%;
   height: 122px;

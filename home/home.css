@@ -20,8 +20,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container {
-    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 i:hover{
     cursor: pointer;
@@ -166,13 +167,13 @@ i:hover{
         padding: 50vh 0 30vh 5vw;
     }
     .new-products {
-        width: 90%;
         border-radius: 5px;
         margin: -50px auto 0 auto ;
+        background-color: #fff;
+    }
+    .new-products__row {
         display: flex;
         justify-content: center;
-        bottom: 100px;
-        background-color: #fff;
     }
     .new-products__item{
         width: 33.33%;
@@ -212,7 +213,6 @@ i:hover{
     }
 
     .best-seller__products{
-        width: 90vw;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;

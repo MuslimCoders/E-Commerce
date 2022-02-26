@@ -162,9 +162,12 @@ i:hover{
         background-position: center;
     }
     .main-text {
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: #fff;
-        padding: 50vh 0 30vh 5vw;
+        padding: 300px 0 0 0;
+    }
+    .time {
+        display: none;
     }
     .new-products__row {
         display: flex;
@@ -348,13 +351,17 @@ i:hover{
       }
 
     /* Sardor */
-    .bg-image {
-        height: 50vh;
+    .main {
+        padding: 60px 10px 0;
     }
-    .main-text > h2 {
-        font-size: 1.5rem;
-        position: relative;
-        bottom: 150px;
+    .bg-image {
+        max-height: 250px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+    .main-text {
+        padding: 50px 0 0 0;
     }
     .product-description {
         font-size: 0.6em;
@@ -378,6 +385,9 @@ i:hover{
     }
     div.rates img {
         width: 15px;
+    }
+    .new-products {
+        display: none;
     }
 
 }
@@ -443,9 +453,19 @@ i:hover{
         height: 50vh;
     }
     .main-text > h2 {
-        font-size: 1.5rem;
-        position: relative;
-        bottom: 150px;
+        font-size: 2.5rem;
+    }
+    .time {
+        margin-top: 15px;
+        display: block;
+        color: #fff;
+    }
+    .time-box {
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 5px;
     }
     .product-description {
         font-size: 0.6em;

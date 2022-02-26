@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="pay-modal">
+
+            <!-- modal buttons icon start -->
+
+            <div class="pay-modal_direct">
+
+                <div class="pay-modal_icons">
+
+                    <div class="arrow-icon">
+                        <img src="./icons/arrow_left.svg" alt="arrow_left" class="back-icon">
+                    </div>
+
+                    <div class="close-icon">
+                        <img src="./icons/closebtn.svg" alt="closebtn" class="close-icon">
+                    </div>
+
+                    <h3 class="pay-modal_title">Make payment</h3>
+
+                </div>
+            </div>
+
+            <!-- modal buttons icon end -->
+
+            <!-- start crossbar -->
+
+            <div class="container-progressbar">
+                <ul class="progressbar">
+                    <li class="number" id="active"></li>
+                    <li class="number"></li>
+                    <li class=" number"></li>
+                </ul>
+            </div>
+
+            <!-- end crossbar -->
+
+            <form action="#" class="user-bios">
+                <div class="user-bio">
+                    <!-- start name -->
+                    <div class="user-name">
+                        <input type="text" name="fname" placeholder="FirstName" class="input-name">
+                        <input type="text" placeholder="LastName" name="lname" class="input-lastname">
+                    </div>
+                    <!-- start address -->
+                    <div class="user-address">
+                        <input type="text" placeholder="Email Adress" name="email" class="input-address">
+
+                        <textarea name="" placeholder="Address for Delivery" class="textarea"></textarea>
+
+                    </div>
+
+                    <h2 class="user-title">Select Method Of Payment</h2>
+
+                    <!-- start check card -->
+                    <div class="user-box">
+                        <div class="check-area">
+
+                            <div class="checks">
+                                <label class="check">
+
+                                    <div class="check-card">
+                                        <img src="./icons/Credit Card.svg" alt="" class="check-icon">
+                                        <h3 class="check-title">Credir Card or Debit</h3>
+                                    </div>
+                                    <div class="checked-table">
+                                        <input type="checkbox" class="check-mark">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="checks">
+                                <label class="check">
+
+                                    <div class="check-card">
+                                        <img src="./icons/Paypal.svg" alt="" class="check-icon">
+                                        <h3 class="check-title">Paypal</h3>
+                                    </div>
+                                    <div class="checked-table">
+                                        <input type="checkbox" class="check-mark">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="checks">
+                                <label class="check">
+                                    <div class="check-card">
+                                        <img src="./icons/Bank.svg" alt="" class="check-icon">
+                                        <h3 class="check-title">Bank Transfer</h3>
+                                    </div>
+                                    <div class="checked-table">
+                                        <input type="checkbox" class="check-mark">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                        <input type="number" placeholder="Mobile Phone" class="input-phone">
+                    </div>
+                </div>
+
+                <div class="btn-click">
+                    <button class="btn-submit">Go to Payment</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

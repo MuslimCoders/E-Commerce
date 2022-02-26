@@ -166,9 +166,6 @@ i:hover{
         color: #fff;
         padding: 300px 0 0 0;
     }
-    .time {
-        display: none;
-    }
     .new-products__row {
         display: flex;
         justify-content: center;
@@ -194,6 +191,10 @@ i:hover{
         color: #223263;
     }
     /* Best sellers */
+    .best-seller-mobile-title, .slider, .time {
+        display: none;
+    }
+
     .best-seller {
         margin: 0 auto;
         text-align: center;
@@ -363,11 +364,46 @@ i:hover{
     .main-text {
         padding: 50px 0 0 0;
     }
+    .time {
+        margin-top: 15px;
+        display: block;
+        color: #fff;
+    }
+    .time-box {
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .slider {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        margin-top: 35px;
+        padding: 10px;
+    }
+    .slider > .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #EBF0FF;
+    }
     .product-description {
         font-size: 0.6em;
         top: 7px;
         left: 10px;
     }
+
+    .best-seller-mobile-title {
+        display: block;
+        font-size: 50px;
+    }
+    .best-seller-mobile-title {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .best-seller__nav-items {
         max-width: 90vw;
         margin: 0 10px;
@@ -455,30 +491,23 @@ i:hover{
     .main-text > h2 {
         font-size: 2.5rem;
     }
-    .time {
-        margin-top: 15px;
-        display: block;
-        color: #fff;
-    }
-    .time-box {
-        color: #000;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        margin: 0 5px;
-    }
+ 
+ 
     .product-description {
         font-size: 0.6em;
         top: 7px;
         left: 10px;
     }
-    .best-seller__nav-items {
-        max-width: 90vw;
-        margin: 0 10px;
-        column-gap: 20px;
+    .best-seller__info {
+        display: none;
     }
+   
+ 
     .best-seller__nav-item > a{
         font-size: 0.9rem;
+    }
+    .best-seller__products {
+        margin-top: 30px;
     }
     .best-seller__product {
         width: 180px;

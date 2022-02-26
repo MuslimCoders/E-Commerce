@@ -248,6 +248,7 @@ i:hover{
         left: 30%;
     }
 
+
     .best-seller__product img {
         width: 230px;
     }
@@ -465,6 +466,9 @@ i:hover{
     .best-seller__product {
         width: 180px;
         font-size: 0.6rem;
+    }
+    .product-hover {
+        left: 20%;
     }
 
     .hide-product, .new-products, .load-more {

@@ -228,6 +228,25 @@ i:hover{
         border: 1px solid #F6F6F6;
         border-radius: 5px;
     }
+    .best-seller__product:hover .hover-image {
+        opacity: 0.1;
+        transition: all 0.1s ease-in-out;
+    }
+    .best-seller__product:hover .product-hover{
+        display: block;
+        transition: all 0.5s ease;
+    }
+    .product-hover > a > img{
+        width: 20px;
+        aspect-ratio: 1;
+        margin: 15px;
+    }
+    .product-hover {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+    }
 
     .best-seller__product img {
         width: 230px;

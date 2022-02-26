@@ -166,16 +166,14 @@ i:hover{
         color: #fff;
         padding: 50vh 0 30vh 5vw;
     }
-    .new-products {
-        border-radius: 5px;
-        margin: -50px auto 0 auto ;
-        background-color: #fff;
-    }
     .new-products__row {
         display: flex;
         justify-content: center;
     }
     .new-products__item{
+        margin-top: -100px;
+        background-color: #fff;
+        border-radius: 5px;
         width: 33.33%;
         position: relative;
     }

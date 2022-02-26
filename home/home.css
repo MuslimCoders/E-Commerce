@@ -218,7 +218,7 @@ i:hover{
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .best-seller__product {
         width: 250px;
@@ -226,6 +226,7 @@ i:hover{
         margin: 10px 0;
         position: relative;
         border: 1px solid #F6F6F6;
+        border-radius: 5px;
     }
 
     .best-seller__product img {
@@ -395,13 +396,13 @@ i:hover{
         left: 10px;
     }
 
-    .best-seller-mobile-title {
+    .best-seller__info{
         display: block;
-        font-size: 50px;
     }
     .best-seller-mobile-title {
         display: flex;
         justify-content: space-between;
+        font-weight: 800;
     }
 
     .best-seller__nav-items {
@@ -412,9 +413,43 @@ i:hover{
     .best-seller__nav-item > a{
         font-size: 0.9rem;
     }
+    .best-seller-mobile__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+    .best-seller-mobile__item > p {
+        max-width: 100px;
+        color: #9098B1;
+    }
+    .blue {
+        color: var(--havorang);
+    }
+    .best-seller-mobile-img {
+        border: 1px solid #EBF0FF;
+        padding: 25px;
+        margin: 0 auto;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+    }
+    .best-seller-mobile-img > img {
+        height: 100%;
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+    .best-seller__products {
+        margin-top: 300px;
+    }
     .best-seller__product {
-        width: 180px;
+        width: 200px;
         font-size: 0.6rem;
+    }
+
+    .hide-product, .new-products, .load-more {
+        display: none;
     }
     .best-seller__product img {
         width: 160px;
@@ -422,10 +457,6 @@ i:hover{
     div.rates img {
         width: 15px;
     }
-    .new-products {
-        display: none;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -506,13 +537,11 @@ i:hover{
     .best-seller__nav-item > a{
         font-size: 0.9rem;
     }
-    .best-seller__products {
-        margin-top: 30px;
-    }
-    .best-seller__product {
+  
+    /* .best-seller__product {
         width: 180px;
         font-size: 0.6rem;
-    }
+    } */
     .best-seller__product img {
         width: 160px;
     }

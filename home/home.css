@@ -164,7 +164,7 @@ i:hover{
     .main-text {
         font-size: 2.5rem;
         color: #fff;
-        padding: 300px 0 0 0;
+        padding-top: 300px;
     }
     .new-products__row {
         display: flex;
@@ -247,10 +247,9 @@ i:hover{
         top: 25%;
         left: 30%;
     }
-
-
     .best-seller__product img {
-        width: 230px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     div.rates img{
@@ -329,7 +328,6 @@ i:hover{
 .mobile-bottom-nav{
     display: none;
 }
-
 /* Sardor vaqtincha yozdi */
 .image > img{
     width: 100%;
@@ -337,152 +335,21 @@ i:hover{
 
 
 
-
-@media screen and (max-width: 480px) {
-    .upper-menu{
+@media screen and (min-width: 769px){
+    .time, .slider, .best-seller-mobile {
         display: none;
-    }
-    .mobile-bottom-nav {
-        display: block;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        will-change: transform;
-        transform: translateZ(0);
-        display: flex;
-        height: 50px;
-        box-shadow: 0 -2px 5px -2px #333;
-        background-color: #fff;
-      }
-      .mobile-bottom-nav__item {
-        flex-grow: 1;
-        text-align: center;
-        font-size: 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .mobile-bottom-nav__item--active {
-        color: var(--havorang);
-      }
-      .mobile-bottom-nav__item-content {
-        display: flex;
-        flex-direction: column;
-      }
-
-    /* Sardor */
-    .main {
-        padding: 60px 10px 0;
-    }
-    .bg-image {
-        max-height: 250px;
-        border-radius: 10px;
-        background-size: cover;
-        background-position: center;
-    }
-    .main-text {
-        padding: 50px 0 0 0;
-    }
-    .time {
-        margin-top: 15px;
-        display: block;
-        color: #fff;
-    }
-    .time-box {
-        color: #000;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 5px;
-        margin: 0 5px;
-    }
-    .slider {
-        display: flex;
-        justify-content: center;
-        column-gap: 15px;
-        margin-top: 35px;
-        padding: 10px;
-    }
-    .slider > .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #EBF0FF;
     }
     .product-description {
-        font-size: 0.6em;
-        top: 7px;
-        left: 10px;
+        top: 5px;
+        left: 5px;
     }
-
-    .best-seller__info{
-        display: block;
-    }
-    .best-seller-mobile-title {
-        display: flex;
-        justify-content: space-between;
-        font-weight: 800;
-    }
-
-    .best-seller__nav-items {
-        max-width: 90vw;
-        margin: 0 10px;
-        column-gap: 20px;
-    }
-    .best-seller__nav-item > a{
-        font-size: 0.9rem;
-    }
-    .best-seller-mobile__items {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        padding: 30px 0 30px 0;
-    }
-    .best-seller-mobile__item > p {
-        max-width: 100px;
-        color: #9098B1;
-    }
-    .blue {
-        color: var(--havorang);
-    }
-    .best-seller-mobile-img {
-        border: 1px solid #EBF0FF;
-        padding: 25px;
-        margin: 0 auto;
-        border-radius: 50%;
-        height: 80px;
-        width: 80px;
-    }
-    .best-seller-mobile-img > img {
-        height: 100%;
-        display: block;
-        width: 100%;
-        object-fit: contain;
-    }
-    .best-seller__products {
-        margin-top: 300px;
-    }
-    .best-seller__product {
-        width: 180px;
-        font-size: 0.6rem;
-    }
-    .product-hover {
-        left: 20%;
-    }
-
-    .hide-product, .new-products, .load-more {
-        display: none;
-    }
-    .best-seller__product img {
-        width: 160px;
-    }
-    div.rates img {
-        width: 15px;
+    .best-seller__product{
+        width: 24%;
     }
 }
 
-@media screen and (max-width: 768px) {
+
+@media (min-width: 481px) and (max-width:768px) {
     .main-menu .logo a{
         font-size: 14px;
         margin-left: 4px;
@@ -538,33 +405,176 @@ i:hover{
         color: var(--qora);
         transition: 0.2s;
     }
+
+/* Sardor */
+    .time, .slider, .best-seller-mobile {
+        display: none;
+    }
+    .product-description {
+        top: 5px;
+        left: 5px;
+        font-size: 0.8rem;
+    }
+    .main-text {
+        padding-top: 150px;
+    }
+    .best-seller__product{
+        width: 24%;
+    }
+    div.rates img{
+        width: 15px;
+    }
+    .product-hover {
+        top: 15%;
+        left: 30%;
+    }
+    .product-hover > a > img{
+        margin: 0;
+    }
+
     /* Sardor's code */
+  
+  
+}
+
+
+@media screen and (max-width: 480px) {
+    .upper-menu{
+        display: none;
+    }
+    .mobile-bottom-nav {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        will-change: transform;
+        transform: translateZ(0);
+        display: flex;
+        height: 50px;
+        box-shadow: 0 -2px 5px -2px #333;
+        background-color: #fff;
+      }
+      .mobile-bottom-nav__item {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .mobile-bottom-nav__item--active {
+        color: var(--havorang);
+      }
+      .mobile-bottom-nav__item-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+    /* Sardor */
+    .main {
+        padding: 60px 10px 0;
+    }
     .bg-image {
-        height: 50vh;
+        max-height: 250px;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
     }
-    .main-text > h2 {
-        font-size: 2.5rem;
+    .main-text {
+        padding-top: 50px;
+        font-size: 1.2rem;
     }
- 
- 
+    .time {
+        margin-top: 3rem;
+        display: block;
+        color: #fff;
+    }
+    .time-box {
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .slider {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        margin-top: 35px;
+        padding: 10px;
+    }
+    .slider > .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #EBF0FF;
+    }
     .product-description {
         font-size: 0.6em;
         top: 7px;
         left: 10px;
     }
-    .best-seller__info {
+
+    .best-seller__info{
         display: none;
     }
-   
- 
+    .best-seller-mobile-title {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 800;
+    }
+
+    .best-seller__nav-items {
+        max-width: 90vw;
+        margin: 0 10px;
+        column-gap: 20px;
+    }
     .best-seller__nav-item > a{
         font-size: 0.9rem;
     }
-  
-    /* .best-seller__product {
+    .best-seller-mobile__items {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+    .best-seller-mobile__item > p {
+        max-width: 100px;
+        color: #9098B1;
+    }
+    .blue {
+        color: var(--havorang);
+    }
+    .best-seller-mobile-img {
+        border: 1px solid #EBF0FF;
+        padding: 25px;
+        margin: 0 auto;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+    }
+    .best-seller-mobile-img > img {
+        height: 100%;
+        display: block;
+        width: 100%;
+        object-fit: contain;
+    }
+    .best-seller__products {
+        margin-top: 300px;
+    }
+    .best-seller__product {
         width: 180px;
         font-size: 0.6rem;
-    } */
+    }
+    .product-hover {
+        left: 20%;
+    }   
+
+    .hide-product, .new-products, .load-more {
+        display: none;
+    }
     .best-seller__product img {
         width: 160px;
     }
@@ -572,3 +582,4 @@ i:hover{
         width: 15px;
     }
 }
+

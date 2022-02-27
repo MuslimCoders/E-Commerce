@@ -263,7 +263,7 @@ i:hover{
         font-size: 0.8rem;
         color: gray;
         font-weight: 200;
-        padding: 0 10px;
+        padding: 0 10px 0 0;
     }
     .discount {
         color: #FB7181;

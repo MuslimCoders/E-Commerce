@@ -787,6 +787,7 @@ color: var(--qora);
         display: flex;
         justify-content: space-between;
         font-weight: 800;
+        font-size: 0.8rem;
     }
 
     .best-seller__nav-items {
@@ -828,7 +829,7 @@ color: var(--qora);
         margin-top: 300px;
     }
     .best-seller__product {
-        width: 180px;
+        width: 150px;
         font-size: 0.6rem;
         text-align: left;
     }
@@ -839,7 +840,7 @@ color: var(--qora);
         display: none;
     }
     .best-seller__product img {
-        width: 160px;
+        width: 130px;
     }
     div.rates img {
         width: 15px;

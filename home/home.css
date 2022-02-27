@@ -874,6 +874,9 @@ color: var(--qora);
         margin-top: 0;
         margin-bottom: 90px;
     }
+    .search input{
+        width: 200px;
+    }
     .search button{
         margin-top: 0px;
     }

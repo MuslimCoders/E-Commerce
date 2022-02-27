@@ -331,6 +331,9 @@ i:hover{
 .main-menu .main-menu-options label .fa-xmark{
     display: none;
 }
+.main-menu .main-menu-options label .fa-xmark::before{
+    display: none;
+}
 .mobile-bottom-nav{
     display: none;
 }
@@ -482,6 +485,7 @@ color: var(--qora);
     text-align: center;
     height: auto;
     margin-top: 30px;
+    margin-bottom: 70px;
 }
 .search input{
     width: 300px;
@@ -493,7 +497,7 @@ color: var(--qora);
 }
 .search button{
     margin-left: -6px;
-    margin-top: 1px;
+    margin-top: 0px;
     height: 35px;
     width: 70px;
     border: none;
@@ -622,6 +626,64 @@ color: var(--qora);
 
 
 @media screen and (max-width: 480px) {
+
+    .main-menu .logo a{
+        font-size: 14px;
+        margin-left: 4px;
+        color: var(--qora);
+    }
+    .main-menu .main-menu-options{
+        position: relative;
+    }
+    .main-menu .main-menu-options ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background-color: rgba(214, 214, 214, 0.8);
+        backdrop-filter: blur(10px);
+        width: 300px;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        right: -300px;
+        transition: 0.3s;
+    }
+    .main-menu .main-menu-options #check,
+    .main-menu .main-menu-options label i.fa-xmark{
+        opacity: 0;
+        right: 0;
+        font-size: 22px;
+    }
+    .main-menu .main-menu-options label .fa-bars-staggered,
+    .main-menu .main-menu-options label .fa-xmark{
+        display: block;
+    }
+    .main-menu .main-menu-options #check:checked ~ ul {
+        right: 0;
+    }
+    .main-menu .main-menu-options #check:checked ~ label i.fa-xmark{
+        opacity: 1;
+        position: fixed;
+        z-index: 100;
+        right: 250px;
+        transition: 0.3s;
+    }
+    .main-menu .main-menu-options ul li{
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .main-menu .main-menu-options ul li a{
+        font-size: 16px;
+        color: var(--qora);
+        transition: 0.2s;
+    }
+
     .upper-menu{
         display: none;
     }
@@ -801,5 +863,12 @@ color: var(--qora);
     }
     .foot-margin {
         margin-bottom: 50px;
+    }
+    .search {
+        margin-top: 0;
+        margin-bottom: 90px;
+    }
+    .search button{
+        margin-top: 0px;
     }
 }

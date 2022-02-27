@@ -829,7 +829,7 @@ color: var(--qora);
         margin-top: 300px;
     }
     .best-seller__product {
-        width: 170px;
+        width: 45vw;
         font-size: 0.6rem;
         text-align: left;
     }
@@ -840,7 +840,7 @@ color: var(--qora);
         display: none;
     }
     .best-seller__product img {
-        width: 150px;
+        width: 40vw;
     }
     div.rates img {
         width: 15px;

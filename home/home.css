@@ -283,11 +283,17 @@ i:hover{
     background-color: var(--moviy);
     padding: 0 50px 0 50px;
 }
-.footer .upper-footer, .footer .lower-footer{
+.footer .upper-footer{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
     margin-bottom: 20px;
+    padding: 20px 0;    
+}
+ .footer .lower-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     padding: 20px 0;
 }
 .footer .upper-footer .footer-info,
@@ -333,6 +339,169 @@ i:hover{
     width: 100%;
 }
 
+/* Highlight va undan pasti */
+.highlight{
+    height: auto;
+    width: 100%;
+    background-color: var(--havorang);
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    padding: 100px;
+}
+.highlight .highlight-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    color: #f1f1f1;
+}
+.highlight .highlight-text h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.highlight .highlight-text p{
+    font-size: 14px;
+    color: #f1f1f1;
+    margin-top: 15px;
+}
+.highlight .highlight-text a{
+    color: #fff;
+    font-size: 14px;
+}
+.highlight .highlight-text a::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    margin-left: -75px;
+    margin-top: 27px;
+    transition: 0.2s;
+}
+.highlight .highlight-text a:hover::after{
+    width: 100px;
+    color: #fff;
+}
+.highlight .image{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.highlight .image img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: -15%;
+}
+/* Highlight va undan pasti */
+
+/* Shipping and latest news section */
+.shipping-container{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+.shipping{
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.shipping img{
+    width: 40%;
+}
+.shipping h3{
+    margin-top: 30px;
+}
+.shipping p{
+    font-size: 12px;
+}
+
+.news-container{
+    text-align: center;
+    margin-top: 50px;
+}
+.news-container h3{
+    color: #000;
+    margin-bottom: 50px;
+}
+.news-container .news-container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.news-container .news-container-cards .news-card{
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+}
+ .news-card .card-image img{
+    width: 100px;
+}
+.news-card .card-content{
+    text-align: left;
+}
+.news-card .card-content h6{
+    padding: 3px;
+    color: gray;
+}
+.news-card .card-content h4{
+color: var(--qora);
+}
+.news-card .card-content p{
+    font-size: 11px;
+}
+.news-card .card-content b{
+    color: var(--qizil);
+}
+.news-card .card-content b del{
+    color: rgb(90, 89, 89);
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 4px;
+}
+.news-card .card-content b del::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: gray;
+    margin-left: -30px;
+    margin-top: 14px;
+
+}
+.search {
+    text-align: center;
+    height: auto;
+    margin-top: 30px;
+}
+.search input{
+    width: 300px;
+    height: 35px;
+    border: 2px solid var(--moviy);
+    outline: none;
+    padding: 0 8px;
+    color: #333;
+}
+.search button{
+    margin-left: -6px;
+    margin-top: 1px;
+    height: 35px;
+    width: 70px;
+    border: none;
+    font-size: 12px;
+    background-color: var(--havorang);
+    color: #fff;
+}
+/* Shipping and latest news section */
 
 
 @media screen and (min-width: 769px){
@@ -349,7 +518,15 @@ i:hover{
     .mobile-add-image {
         display: none;
     }
+
+    .highlight .image img{
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        margin-top: -10%;
+    }
 }
+
 
 
 @media (min-width: 481px) and (max-width:768px) {
@@ -460,12 +637,16 @@ i:hover{
         display: flex;
         /* Sardor */
         justify-content: space-evenly;
+        align-items: center;
         /* Sardor */
-        height: 50px;
+        height: 60px;
         box-shadow: 0 -2px 5px -2px #333;
         background-color: #fff;
       }
 
+      .mobile-bottom-nav a{
+          color: var(--qora);
+      }
       .mobile-bottom-nav__item {
         flex-grow: 1;
         text-align: center;
@@ -481,7 +662,9 @@ i:hover{
         display: flex;
         flex-direction: column;
       }
-
+      .mobile-bottom-nav__item-content i{
+          font-size: 1.1rem;
+      }
   
 
     /* Sardor */

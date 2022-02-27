@@ -796,7 +796,7 @@ color: var(--qora);
         font-size: 1rem;
     }
     /* Zayniddin higlight */
-    .highlight, .footer {
+    .highlight, .footer, .shipping-container, .news-container {
         display: none;
     }
     .foot-margin {

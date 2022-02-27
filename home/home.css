@@ -661,6 +661,9 @@ color: var(--qora);
     .main-menu .main-menu-options label .fa-xmark{
         display: block;
     }
+    /* .main-menu .main-menu-options label .fa-xmark::before{
+        display: block;
+    } */
     .main-menu .main-menu-options #check:checked ~ ul {
         right: 0;
     }
@@ -670,6 +673,9 @@ color: var(--qora);
         z-index: 100;
         right: 250px;
         transition: 0.3s;
+    }
+    .main-menu .main-menu-options #check:checked ~ label i.fa-xmark::before{
+        display: block;
     }
     .main-menu .main-menu-options ul li{
         margin-left: 30px;

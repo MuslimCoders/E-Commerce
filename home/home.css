@@ -233,7 +233,7 @@ i:hover{
     }
     .best-seller__product:hover .hover-image {
         opacity: 0.1;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .best-seller__product:hover .product-hover{
         opacity: 1;
@@ -247,7 +247,7 @@ i:hover{
         position: absolute;
         top: 25%;
         opacity: 0;
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
         left: 30%;
     }
     .best-seller__product img {

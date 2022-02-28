@@ -184,8 +184,8 @@ i:hover{
     .product-description {
         position: absolute;
         text-transform: uppercase;
-        top: 30px;
-        left: 50px;
+        top: 5px;
+        left: 5px;
         font-weight: 800;
         font-size: 1.2em;
         color: #223263;
@@ -221,20 +221,22 @@ i:hover{
         justify-content: space-between;
     }
     .best-seller__product {
-        width: 250px;
+        width: 24%;
         padding: 10px;
         margin: 10px 0;
         position: relative;
         border: 1px solid #F6F6F6;
         border-radius: 5px;
     }
+    .best-seller__product a .img {
+        height: 200px;
+    }
     .best-seller__product:hover .hover-image {
         opacity: 0.1;
-        transition: all 0.1s ease-in-out;
+        transition: all 0.4s ease-in-out;
     }
     .best-seller__product:hover .product-hover{
-        display: block;
-        transition: all 0.5s ease;
+        opacity: 1;
     }
     .product-hover > a > img{
         width: 20px;
@@ -242,9 +244,10 @@ i:hover{
         margin: 15px;
     }
     .product-hover {
-        display: none;
         position: absolute;
         top: 25%;
+        opacity: 0;
+        transition: all 0.5s ease;
         left: 30%;
     }
     .best-seller__product img {
@@ -272,6 +275,9 @@ i:hover{
     .load-more > a{
         color: var(--havorang);
         border-bottom: 3px solid var(--havorang);
+    }
+    .time, .slider, .best-seller-mobile, .mobile-add-image {
+        display: none;
     }
 
 
@@ -344,15 +350,14 @@ i:hover{
 
 /* Highlight va undan pasti */
 .highlight{
-    height: auto;
     width: 100%;
     background-color: var(--havorang);
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     margin-top: 50px;
-    padding: 100px;
+    /* padding: 100px; */
 }
-.highlight .highlight-text{
+.highlight-text{
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -389,18 +394,14 @@ i:hover{
     color: #fff;
 }
 .highlight .image{
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-.highlight .image img{
-    position: absolute;
-    width: 400px;
+    width: 700px;
     height: 400px;
-    margin-top: -15%;
 }
+.highlight .image img {
+    width: 100%;
+    margin-top: -100px;
+}
+
 /* Highlight va undan pasti */
 
 /* Shipping and latest news section */
@@ -507,32 +508,6 @@ color: var(--qora);
 }
 /* Shipping and latest news section */
 
-
-@media screen and (min-width: 769px){
-    .time, .slider, .best-seller-mobile {
-        display: none;
-    }
-    .product-description {
-        top: 5px;
-        left: 5px;
-    }
-    .best-seller__product{
-        width: 24%;
-    }
-    .mobile-add-image {
-        display: none;
-    }
-
-    .highlight .image img{
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        margin-top: -10%;
-    }
-}
-
-
-
 @media (min-width: 481px) and (max-width:768px) {
     .main-menu .logo a{
         font-size: 14px;
@@ -608,6 +583,9 @@ color: var(--qora);
     }
     .best-seller__product > h3 {
         font-size: 0.7rem;
+    }
+    .best-seller__product a .img {
+        height: 100px;
     }
     div.rates img{
         width: 15px;
@@ -788,6 +766,9 @@ color: var(--qora);
         justify-content: space-between;
         font-weight: 800;
         font-size: 0.8rem;
+    }
+    .best-seller-mobile {
+        display: block;
     }
 
     .best-seller__nav-items {

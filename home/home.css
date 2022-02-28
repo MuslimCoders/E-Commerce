@@ -483,28 +483,34 @@ color: var(--qora);
 
 }
 .search {
-    text-align: center;
     height: auto;
     margin-top: 30px;
     margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }
 .search input{
     width: 300px;
-    height: 35px;
+    height: 50px;
     border: 2px solid var(--moviy);
     outline: none;
     padding: 0 8px;
     color: #333;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
 }
 .search button{
     margin-left: -6px;
     margin-top: 0px;
-    height: 35px;
-    width: 70px;
+    height: 50px;
+    width: 100px;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     background-color: var(--havorang);
     color: #fff;
+    font-family: "Poppins", sans-serif;
 }
 /* Shipping and latest news section */
 
@@ -857,9 +863,12 @@ color: var(--qora);
         margin-bottom: 90px;
     }
     .search input{
-        width: 200px;
+        width: 230px;
     }
     .search button{
-        margin-top: 0px;
+        margin-top: -1px;
+        border: none;
+        height: 50px;
+        width: 80px;
     }
 }

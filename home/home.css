@@ -860,13 +860,15 @@ color: var(--qora);
     }
     .search {
         margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
         margin-bottom: 90px;
     }
     .search input{
         width: 230px;
     }
     .search button{
-        margin-top: -1px;
         border: none;
         height: 50px;
         width: 80px;

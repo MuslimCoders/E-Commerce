@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.3);
+    .pay-modal {
+        width: 80%;
+
+        background: #fff;
+        height: 792.84px;
+        border-radius: 5px;
+        z-index: 0;
+        .pay-modal_direct {
+            width: 100%;
+            .pay-modal_icons {
+                width: 80%;
+                margin: 0 auto;
+                padding: 50px 0;
+                .arrow-icon {
+                    display: flex;
+                    justify-content: flex-start;
+                    width: 100%;
+                    .back-icon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .close-icon {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    .close-icon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+                .pay-modal_title {
+                    font-family: 'Raleway', sans-serif;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 32px;
+                    color: #40bfff;
+                }
+            }
+        }
+
+        .container-progressbar {
+            font-family: "Nunito", sans-serif;
+            width: 100%;
+            .progressbar {
+                counter-reset: step;
+                text-align: center;
+                .number {
+                    list-style: none;
+                    display: inline-block;
+                    width: 12%;
+                    position: relative;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .number:before {
+                    content: counter(step);
+                    counter-increment: step;
+                    width: 36px;
+                    height: 34px;
+                    line-height: 32px;
+                    border-radius: 50%;
+                    display: block;
+                    margin: 0 auto 10px auto;
+                    color: #fff;
+                    background-color: #dfdede;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+                .number:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #dfdede;
+                    top: 17px;
+                    left: -50%;
+                    z-index: -1;
+                }
+                .number:first-child:after {
+                    content: none;
+                }
+                // .number#active {
+                //     color: green;
+                // }
+                .number#active:before {
+                    background-color: #40bfff;
+                    text-shadow: 0 0 2px #000000 25%;
+                }
+                .number#active + .number:after {
+                    background-color: #40bfff;
+                }
+            }
+        }
+        .user-bios {
+            .user-bio {
+                font-family: "Nunito", sans-serif;
+                width: 80%;
+                margin: 0 auto;
+                .user-name,
+                .user-address,
+                .user-box {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .user-name {
+                    .input-name,
+                    .input-lastname {
+                        width: 380px;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        background-color: #e0e0e0;
+                        border-radius: 10px;
+                        padding: 0 14px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #000000;
+                    }
+                    .input-name::placeholder,
+                    .input-lastname::placeholder {
+                        font-size: 16px;
+                        font-weight: 400;
+                        opacity: 1;
+                        color: #999999;
+                    }
+                }
+                .user-address {
+                    margin-top: 32px;
+                    .input-address {
+                        width: 380px;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        background-color: #e0e0e0;
+                        border-radius: 10px;
+                        padding: 0 14px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #000000;
+                    }
+                    .input-address::placeholder {
+                        color: #999999;
+                    }
+                    .textarea {
+                        margin-top: 12px;
+                        width: 382px;
+                        height: 122px;
+                        border-radius: 10px;
+                        padding: 16px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        background-color: #dfdede;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .user-title {
+                    color: #40bfff;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                .user-box {
+                    display: flex;
+                    font-family: 'Poppins', sans-serif;
+                    .check-area {
+                        // width: 100%;
+                        .checks {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 378px;
+                            height: 50px;
+                            position: relative;
+                            margin: 8px 0;
+                            .check {
+                                cursor: pointer;
+                                display: block;
+                                width: 100%;
+                                .check-card {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    .check-icon {
+                                        width: 24px;
+                                        height: 24px;
+                                        margin: 0 0.5rem;
+                                    }
+                                    .check-title {
+                                        color: #223263;
+                                        font-size: 12px;
+                                        user-select: none;
+                                        font-weight: 700;
+                                        letter-spacing: 0.5px;
+                                    }
+                                }
+
+                                .checked-table {
+                                    .checkmark {
+                                        position: absolute;
+                                        top: 28%;
+                                        left: 90%;
+                                        height: 24px;
+                                        width: 24px;
+                                        border: 1px solid #dfdede;
+                                        border-radius: 5px;
+                                    }
+
+                                    .checkmark::after {
+                                        content: "";
+                                        position: absolute;
+                                        display: none;
+                                    }
+
+                                    .check-mark {
+                                        position: absolute;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                        height: 0;
+                                        width: 0;
+                                    }
+
+                                    .check-mark:checked ~ .checkmark {
+                                        background-color: #EBF0FF;
+                                    }
+                                    .checkmark::after {
+                                        left: 7px;
+                                        top: 3px;
+                                        width: 5px;
+                                        height: 10px;
+                                        border: solid #40BFFF;
+                                        border-width: 0 3px 3px 0;
+                                        transform: rotate(45deg);
+                                    }
+                                    .check-mark:checked ~ .checkmark:after {
+                                        display: block;
+                                    }
+                                }
+
+                                .checked-table:hover input ~ .checkmark {
+                                    background-color: #ccc;
+                                }
+                            }
+                        }
+                    }
+                    .input-phone {
+                        margin-top: 27px;
+                        width: 380px;
+                        height: 50px;
+                        border: none;
+                        outline: none;
+                        background-color: #dfdede;
+                        border-radius: 10px;
+                        padding: 0 14px;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .btn-click {
+                font-family: 'Nunito', sans-serif;
+                text-align: center;
+                .btn-submit {
+                    width: 338px;
+                    height: 70px;
+                    margin-top: 27px;
+                    color: #fff;
+                    text-align: center;
+                    background-color: #33a0ff;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            .btn-submit{
+                background-color: #2894f3;
+            }
+            }
+        }
+    }
+}

@@ -877,9 +877,12 @@ color: var(--qora);
         margin-top: 300px;
     }
     .best-seller__product {
-        width: 40vw;
+        width: 25vw;
         font-size: 0.6rem;
         text-align: left;
+    }
+    .best-seller__product a .img {
+        height: 150px;
     }
     .product-hover {
         left: 20%;
@@ -888,7 +891,7 @@ color: var(--qora);
         display: none;
     }
     .best-seller__product img {
-        width: 35vw;
+        width: 30vw;
     }
     div.rates img {
         width: 15px;

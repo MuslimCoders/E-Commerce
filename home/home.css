@@ -885,7 +885,7 @@ color: var(--qora);
         text-align: left;
     }
     .best-seller__product a .img {
-        height: 100px;
+        height: 150px;
     }
     .product-hover {
         left: 20%;

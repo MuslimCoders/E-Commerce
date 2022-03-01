@@ -1,12 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>List product</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+        rel="stylesheet" />
+      <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="product.css" />
+    </head>
     
-</body>
-</html>
+    <body>
+      <div class="head__bottom"><span>Home</span> / Hot Deal</div>
+      <div class="container">
+        <div class="main">
+          <div class="sidebar">
+            <div class="deal">
+              <h4>Hot deals</h4>
+              <div class="deal__list">
+                <span>Nike</span>
+                <span>2</span>
+              </div>
+              <div class="deal__list deal__active">
+                <span>Airmax</span>
+                <span>48</span>
+              </div>
+              <div class="deal__list">
+                <span>Nike</span>
+                <span>14</span>
+              </div>
+              <div class="deal__list">
+                <span>Adidas</span>
+                <span>15</span>
+              </div>
+              <div class="deal__list">
+                <span>Vans</span>
+                <span>23</span>
+              </div>
+              <div class="deal__list">
+                <span>All Stars</span>
+                <span>1</span>
+              </div>
+              <div class="deal__list">
+                <span>Adidas</span>
+                <span>95</span>
+              </div>
+            </div>
+            <div class="price">
+              <h4>Prices</h4>
+              <div class="price__text">
+                <span>Ranger:</span>
+                <span>$13.99 - $25.99</span>
+              </div>
+              <div class="line">
+                <div class="line__short"></div>
+                <div class="line__tall"></div>
+              </div>
+            </div>
+            <div class="colors">
+              <h4>Color</h4>
+              <div class="colors__inner">
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+                <div class="color"></div>
+              </div>
+            </div>
+            <div class="brand">
+              <h4>Brand</h4>
+              <div class="brand__list">
+                <span>Nike</span>
+                <span>99</span>
+              </div>
+              <div class="brand__list brand__active">
+                <span>Nike</span>
+                <span>99</span>
+              </div>
+              <div class="brand__list">
+                <span>Nike</span>
+                <span>99</span>
+              </div>
+              <div class="brand__list">
+                <span>Nike</span>
+                <span>99</span>
+              </div>
+            </div>
+            <div class="more">
+              <a href="#">More</a>
+            </div>
+          </div>
+          <div class="sections">
+            <div class="content__bg">
+              <section class="section__content content">
+                <div class="content__text">
+                  <h2>Adidas Men Running
+                    Sneakers</h2>
+                  <p>Performance and design. Taken right to the edge.</p>
+                  <a href="#">Shop now</a>
+                  <div class="content__line"></div>
+                </div>
+                <div class="content__img">
+                  <img src="img/shoes-shoe-png-transparent-shoe-images-pluspng-17 1.png" alt="shoe">
+                </div>
+              </section>
+            </div>
+            <div class="filtr">
+              <div class="filtr__text select">
+                <div class="select__text">
+                  13 Items
+                </div>
+                <div class="select__one">
+                  <span>Sort by</span>
+                  <select name="name" id="name">
+                    <option value="name" selected disabled>Name</option>
+                    <option value="name">Adidas</option>
+                    <option value="name">Nike</option>
+                    <option value="name">Airmax</option>
+                    <option value="name">Nike</option>
+                  </select>
+                </div>
+                <div class="select__two">
+                  <span>Show</span>
+                  <select name="size" id="size">
+                    <option value="12" selected>12</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filtr__change">
+                <i class='bx_bxs-grid' style='color:#40bfff'></i>
+                <i class='bx bx-menu' style='color:#c1c8ce'></i>
+              </div>
+            </div>
+    
+            <div class="goods">
+              <div class="box">
+                <img class="animate1" src="./img/image Product.png" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1" src="./img/image Product (1).png" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1" src="./img/image.wallet.svg" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1"  src="./img/Product Picture02.png" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1"  src="./img/nike.yellow.svg" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1"  src="./img/Product Picture01.png" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1" src="./img/nike.bloo.svg" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <img class="animate1" src="./img/nike.bloo.svg" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+              <div class="box">
+                <div class="animate2">
+                <img class="animate1"  src="./img/image Product (1).png" alt="">
+                <img class="second" src="./img/like.svg" alt="">
+                <img class="third" src="./img/pokupka.svg" alt="">
+                <p><img src="./img/hot.svg" alt=""></p>
+              </div>
+                <h3>Nike Air Max 270 React</h3>
+                <div class="rating_stars">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.svg" alt="">
+                  <img src="./img/star.bloomy.svg" alt="">
+                </div>
+                <div class="good_price">
+                  <h4>$299,43</h4>
+                  <h5>$534,33</h5>
+                  <h6>24% Off</h6>
+                </div>
+              </div>
+            </div>
+            <div class="page">
+              <div class="pages">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    
+    </body>
+    
+    </html>

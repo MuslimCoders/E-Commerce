@@ -779,6 +779,9 @@ color: var(--qora);
   
 
     /* Sardor */
+    .container {
+        padding: 0 5px;
+    }
     .main {
         padding: 60px 10px 0;
     }
@@ -891,7 +894,7 @@ color: var(--qora);
         display: none;
     }
     .best-seller__product img {
-        width: 20vw;
+        width: 30vw;
     }
     div.rates img {
         width: 15px;

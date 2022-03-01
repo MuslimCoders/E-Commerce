@@ -922,9 +922,6 @@ color: var(--qora);
     .highlight, .footer, .shipping-container, .news-container {
         display: none;
     }
-    .foot-margin {
-        margin-bottom: 20px;
-    }
     .search {
         margin-top: 0;
         justify-content: center;

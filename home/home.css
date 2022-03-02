@@ -929,6 +929,7 @@ color: var(--qora);
         width: 230px;
     }
     .search button{
+        
         border: none;
         height: 50px;
         width: 80px;

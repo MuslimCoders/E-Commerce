@@ -403,17 +403,25 @@
     filter: alpha (Opacity=25); /*прозрачность для IE*/
     opacity: 0.25; /* прозрачность для других браузеров */
   }
-  .animate2 {
-    position: relative;
-    margin: 0 auto; /* устанваливаем блок div по центру страницы*/
-    width: 480px; /* Ширина */
-    height: 360px; /* Высота */
-  }
-  .animate2 img {
-    position: absolute; /* абсолютное позиционирование*/
-    left: 0; /* выравниваем картинки по левому верхнему углу div-а*/
-    top: 0; /* выравниваем картинки по левому верхнему углу div-а */
-  }
+  /* .best-seller__product:hover .hover-image {
+    opacity: 0.1;
+    transition: all 0.1s ease-in-out;
+}*/
+img.animate1:hover .product-hover{
+    display: block;
+    transition: all 0.5s ease;
+} 
+/* .product-hover > a > img{
+    width: 20px;
+    aspect-ratio: 1;
+    margin: 15px;
+}
+.product-hover {
+    display: none;
+    position: absolute;
+    /* top: 25%;
+    left: 30%; 
+} */
   .page {
     width: 977.5px;
     height: 56px;

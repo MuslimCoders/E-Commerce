@@ -20,9 +20,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1260px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 2px;
+    padding: 0 30px;
 }
 i:hover{
     cursor: pointer;
@@ -778,6 +779,9 @@ color: var(--qora);
   
 
     /* Sardor */
+    .container {
+        padding: 0 5px;
+    }
     .main {
         padding: 60px 10px 0;
     }
@@ -880,6 +884,9 @@ color: var(--qora);
         font-size: 0.6rem;
         text-align: left;
     }
+    .best-seller__product a .img {
+        height: 150px;
+    }
     .product-hover {
         left: 20%;
     }   
@@ -914,9 +921,6 @@ color: var(--qora);
     /* Zayniddin higlight */
     .highlight, .footer, .shipping-container, .news-container {
         display: none;
-    }
-    .foot-margin {
-        margin-bottom: 50px;
     }
     .search {
         margin-top: 0;

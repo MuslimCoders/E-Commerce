@@ -199,6 +199,8 @@ i:hover{
     .best-seller {
         margin: 0 auto;
         text-align: center;
+        position: relative;
+        z-index: 1;
     }
     .best-seller__nav-items {
         display: flex;
@@ -220,6 +222,7 @@ i:hover{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+     
     }
     .best-seller__product {
         width: 24%;

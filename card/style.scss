@@ -816,22 +816,22 @@ body {
                             margin: 7px auto;
                         }
                     }
-                    .user-address{
-                        .input-address{
-                            margin: 7px auto; 
+                    .user-address {
+                        .input-address {
+                            margin: 7px auto;
                         }
-                        .textarea{
-                            margin: 7px auto; 
+                        .textarea {
+                            margin: 7px auto;
                         }
                     }
-                    .user-title{
-                        text-align:center;
+                    .user-title {
+                        text-align: center;
                     }
-                    .user-box{
-                        .check-area{
+                    .user-box {
+                        .check-area {
                             margin: 0 auto;
                         }
-                        .input-phone{
+                        .input-phone {
                             margin: 0 auto;
                         }
                     }
@@ -1002,6 +1002,43 @@ body {
                             justify-content: center;
                             flex-direction: column;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-modal {
+        .pay-modal {
+            .user-bios {
+                .user-bio {
+                    .user-name {
+                        .input-name,
+                        .input-lastname {
+                            width: 312px;
+                        }
+                    }
+                    .user-address{
+                        .input-address, .textarea{
+                            width: 312px;
+                        }
+                    }
+                    .user-box{
+                        .check-area{
+                            .checks{
+                                width: 312px;
+                            }
+                        }
+                        .input-phone{
+                            width: 312px;
+                        }
+                    }
+                }
+                .btn-click{
+                    .btn-submit{
+                        font-size: 19px;
+                        width: 248px;
+                        height: 51px;
                     }
                 }
             }
@@ -1210,6 +1247,81 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .container-modal {
+        .pay-modal {
+            
+            .pay-modal_direct{
+               .pay-modal_icons{
+                .arrow-icon{
+                    .back-icon{
+                        width: 16px;
+                    }
+                }
+                .close-icon{
+                    .close-btn{
+                        width: 16px;
+                    }
+                }
+                .pay-modal_title{
+                    font-size: 22px;
+                }
+               }
+            }
+
+.container-progressbar{
+    .progressbar{
+        .number::before{
+            line-height: 30px;
+            width: 31px;
+            height: 29px;
+        }
+        .number::after{
+
+            top:14px;
+        }
+    }
+}
+
+            .user-bios {
+                .user-bio {
+                    .user-name {
+                        .input-name,
+                        .input-lastname {
+                            width: 228px;
+                            height: 41px;
+                        }
+                    }
+                    .user-address{
+                        .input-address{
+                            width: 228px;
+                            height: 41px;
+                        }
+                         .textarea{
+                            width: 228px;
+                        }
+                    }
+                    .user-box{
+                        .check-area{
+                            .checks{
+                                width: 228px;
+                            }
+                        }
+                        .input-phone{
+                            width: 228px;
+                            height: 41px;
+                        }
+                    }
+                }
+                .btn-click{
+                    .btn-submit{
+                        font-size: 15px;
+                        width: 193px;
+                        height: 36px;
                     }
                 }
             }

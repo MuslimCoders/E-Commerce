@@ -1330,6 +1330,24 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .container-modal .pay-modal .user-bios .user-bio .user-name .input-name,
+  .container-modal .pay-modal .user-bios .user-bio .user-name .input-lastname {
+    width: 312px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-address .input-address, .container-modal .pay-modal .user-bios .user-bio .user-address .textarea {
+    width: 312px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-box .check-area .checks {
+    width: 312px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-box .input-phone {
+    width: 312px;
+  }
+  .container-modal .pay-modal .user-bios .btn-click .btn-submit {
+    font-size: 19px;
+    width: 248px;
+    height: 51px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1575,6 +1593,47 @@ body {
   .total-container .product-info .product-info__items .product-info__box .product-table .product-card .product-sum .sum-btn {
     width: 100%;
     margin-bottom: 80px;
+  }
+  .container-modal .pay-modal .pay-modal_direct .pay-modal_icons .arrow-icon .back-icon {
+    width: 16px;
+  }
+  .container-modal .pay-modal .pay-modal_direct .pay-modal_icons .close-icon .close-btn {
+    width: 16px;
+  }
+  .container-modal .pay-modal .pay-modal_direct .pay-modal_icons .pay-modal_title {
+    font-size: 22px;
+  }
+  .container-modal .pay-modal .container-progressbar .progressbar .number::before {
+    line-height: 30px;
+    width: 31px;
+    height: 29px;
+  }
+  .container-modal .pay-modal .container-progressbar .progressbar .number::after {
+    top: 14px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-name .input-name,
+  .container-modal .pay-modal .user-bios .user-bio .user-name .input-lastname {
+    width: 228px;
+    height: 41px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-address .input-address {
+    width: 228px;
+    height: 41px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-address .textarea {
+    width: 228px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-box .check-area .checks {
+    width: 228px;
+  }
+  .container-modal .pay-modal .user-bios .user-bio .user-box .input-phone {
+    width: 228px;
+    height: 41px;
+  }
+  .container-modal .pay-modal .user-bios .btn-click .btn-submit {
+    font-size: 15px;
+    width: 193px;
+    height: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
